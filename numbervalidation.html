@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validate()">
+    Number<input type="text" name="num"><span id="numloc"></span>,<br/>
+ <input type="submit" value="Submit"/>   
+</form>
+
+<script>
+    function validate()
+    {
+        var num=document.myForm.num.value;
+        if(isNaN(num))
+        {
+            document.getElementById("numloc").innerHTML="Enter Numberic Values only";
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+</script>
+</body>
+</html>

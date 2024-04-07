@@ -1,0 +1,12 @@
+<p>this is a paragraph</p>
+<p>Here we are going to count total number of paragraphs tags</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores accusantium voluptatum eum aliquid ducimus officiis unde ipsa assumenda. Sequi explicabo eos at quod ullam eaque quae temporibus iusto similique aliquam.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id tempore odio dolorum nesciunt libero ab asperiores earum provident quos incidunt facere illum recusandae, deserunt suscipit nulla voluptate numquam fuga.</p>
+<button onclick="countpara()">Count</button>
+<script>
+ function countpara()
+ {
+    var totalPara=document.getElementsByTagName("p")
+    alert("Total p tags"+totalPara.length);
+ }
+</script>

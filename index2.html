@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <h1>to do list</h1>
+    <input type="text" id="demo"/>
+    <input type="button" value="ADD" onclick="add()"/><br/>
+    <input type="button" value="getdetails" onclick="printList()"/>
+    <ul>
+       
+    </ul>
+</center>
+<script>
+
+    var list=[];
+    function add()
+    {
+        alert("calling add function")
+        var item=document.getElementById("demo").value;
+        list.push(item);
+        alert("added item successfully");
+        console.log(list);
+    }
+    function printList()
+    { alert("hai")
+        for(var i=0;i<list.length;++i)
+        {
+            const para=document.createElement("li");
+            
+            para.innerText=list[i];
+            alert(list[i]);
+            document.body.appendChild(para);
+        }
+    }
+
+</script>
+</body>
+</html>
